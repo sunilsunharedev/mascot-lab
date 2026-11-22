@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#161021">
+    <meta name="description" content="An interactive 3D mascot study inspired by GitHub’s Mona.">
+    <title>Peekaboo · Mascot Lab</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="title">
+        <header class="masthead">
+          <span class="brand"><span class="brand-mark" aria-hidden="true"></span>Mascot Lab</span>
+          <a href="#about">About the study <span aria-hidden="true">↘</span></a>
+        </header>
+        <div class="intro">
+          <h1 id="title">Peekaboo<span>.</span></h1>
+          <p>A little curiosity goes a long way.</p>
+        </div>
+        <div class="exhibit">
+          <div class="stage" aria-hidden="true">
+            <div class="contact"></div>
+            <div class="fallback"><i></i><i></i><b></b><b></b><span></span></div>
+            <div class="canvas-host"></div>
+          </div>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+      </section>
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div>
+          <h2 id="about-title">Made to peek.</h2>
+          <p>An original 3D character inspired by GitHub’s homepage mascot. Move your pointer to meet its gaze, or scroll away and back to see it peek out again.</p>
+        </div>
+        <button type="button" id="replay">Replay peek <span aria-hidden="true">↻</span></button>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
