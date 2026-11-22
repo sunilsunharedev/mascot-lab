@@ -13,6 +13,13 @@ npm run dev
 
 Use `npm run build` to type-check and build into `dist/`. Use `npm run preview` to serve that build locally.
 
+## Host the website
+
+On Netlify, choose **Add new project → Import an existing project**, connect the GitHub repository, and select the `main` branch. The included `netlify.toml` configures Node 22, runs `npm run build`, and publishes `dist/`. Netlify provides a public URL after the build finishes.
+
+For manual hosting, run `npm ci` and `npm run build`, then upload the contents of `dist/` to the root of any static host. The site runs without a backend or environment secrets.
+
+
 ## Reference observations
 
 Inspected the public [GitHub homepage](https://github.com/) in Chrome at 1440 × 1000 CSS pixels with a 1.5 device pixel ratio on November 22, 2026.
